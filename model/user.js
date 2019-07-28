@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+
 // Setup schema
 var userSchema = mongoose.Schema({
     name: {
@@ -15,6 +16,10 @@ var userSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    password:{
+        type:String,
+        required: true
+    }
 });
 
 
